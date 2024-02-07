@@ -1,1 +1,56 @@
+# Responsiveness within CLOUDIQ
+@media only screen and (max-width: 768px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}
+
+/* Accessibility Enhancements */
+a:focus, button:focus {
+    outline: 2px solid #f00;
+}
+a:hover, button:hover {
+    text-decoration: underline;
+}
+
+/* SEO and Performance Enhancements */
+/* Ensure proper alt text is added for images in HTML */
+/* Minification of CSS and JS should be done during the build process */
+/* Lazy loading implementation for images */
+img.lazyload {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
